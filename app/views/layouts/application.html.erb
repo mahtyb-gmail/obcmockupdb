@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
 <head>
   <title>Mockupdb</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -9,8 +10,10 @@
 <body>
 <%= render 'layouts/header' %>
 
-<%= yield %>
+<div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+</div>
 
-<%= render 'layouts/footer' %>
 </body>
 </html>
