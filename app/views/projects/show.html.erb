@@ -37,6 +37,13 @@
   				<b>Schedule info:</b>
   				<%= @project.schedule_info %>
 			</p>
+			
+			<b>Needed skills</b>
+			<ul>
+			  <% @project.skills.each do |skill| %>
+			    <li><%= skill.name %></li>
+			  <% end %>
+			</ul>
 
 			<% if current_user == @project.user %>
 				<%= link_to 'Edit', edit_project_path(@project) %> |

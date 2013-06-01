@@ -11,6 +11,11 @@
     <%= f.input :details %>
     <%= f.input :startdate %>
     <%= f.input :schedule_info %>
+	<p>
+		Expertise needed:
+	</p>
+		<%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name, 
+		{:item_wrapper_class => 'checkbox_container'} %>
   </div>
 
   <div class="form-actions">
