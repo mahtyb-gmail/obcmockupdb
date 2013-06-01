@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+			<p>
+  				<b>Name:</b>
+  				<%= @project.name %>
+			</p>
+
+			<p>
+  				<b>Length:</b>
+  				<%= @project.length %>
+			</p>
+
+			<p>
+  				<b>Project type:</b>
+  				<%= @project.project_type %>
+			</p>
+
+			<p>
+  				<b>Hometown:</b>
+  				<%= @project.hometown %>
+			</p>
+
+			<p>
+  				<b>Details:</b>
+  				<%= @project.details %>
+			</p>
+
+			<p>
+  				<b>Start date:</b>
+  				<%= @project.startdate %>
+			</p>
+
+			<p>
+  				<b>Schedule info:</b>
+  				<%= @project.schedule_info %>
+			</p>
+
+
+			<%= link_to 'Edit', edit_project_path(@project) %> |
+			<%= link_to 'Back', projects_path %>
+		</div>
+	</div>
+</div>
