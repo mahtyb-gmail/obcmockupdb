@@ -1,0 +1,19 @@
+<%= simple_form_for(@profile) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :location %>
+    <%= f.input :title %>
+    <%= f.input :about_me %>
+	<p>
+		Expertise:
+	</p>
+		<%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name, 
+		{:item_wrapper_class => 'checkbox_container'} %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

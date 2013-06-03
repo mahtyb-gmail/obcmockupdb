@@ -13,4 +13,4 @@ skills = Skill.create([{name: 'Writers Unit'}, {name: 'Directors Unit'}, {name: 
    {name: 'Production Data Wranglers'}, {name: 'Interns & Production Assts'}, {name: 'Editing'},
    {name: 'Visual FX'}, {name: 'Sound Post'}, {name: 'Music Dept'}, {name: 'Titles & Animation'},
    {name: 'Post-Production Camera Unit'}, {name: 'Insurance & Legal'}, 
-   {name: 'Marketing/Publicity/Press/Internet'}, {name: 'Behind The Scenes'} ])
+   {name: 'Marketing / Publicity / Press / Internet'}, {name: 'Behind The Scenes'} ])

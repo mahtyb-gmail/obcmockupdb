@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130601153033) do
+ActiveRecord::Schema.define(:version => 20130603001229) do
+
+  create_table "bios", :force => true do |t|
+    t.integer  "profile_id"
+    t.integer  "skill_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "profiles", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "title"
+    t.text     "about_me"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "projects", :force => true do |t|
     t.string   "name"
