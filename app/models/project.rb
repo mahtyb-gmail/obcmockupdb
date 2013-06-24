@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :details, :hometown, :length, :name, :project_type, :schedule_info, :startdate, :skill_ids
+  attr_accessible :details, :hometown, :length, :name, :project_type, :schedule_info, :startdate, :skill_ids, :user_id
   validates :name, presence: true
   
   belongs_to :user

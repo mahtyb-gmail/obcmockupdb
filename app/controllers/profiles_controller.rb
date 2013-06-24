@@ -14,7 +14,8 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
-    @profile = current_user.profile
+    # @profile = current_user.profile
+    @profile = Profile.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
